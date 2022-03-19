@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#furArea {
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    background-color: black;
+}
+#furArea div {
+    position: absolute;
+    background-color: aliceblue;
+    width: 1vh;
+    height: 10vh;
+}
