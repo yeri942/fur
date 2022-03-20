@@ -17,6 +17,6 @@ article {
 #furArea div {
     position: absolute;
     background-color: aliceblue;
-    width: 1vh;
+    width: 0.1vh;
     height: 10vh;
 }
