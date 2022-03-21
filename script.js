@@ -1,10 +1,10 @@
 $(document).ready(() => {
-    for (let j = 0; j < 5; j++) {
-        for (let i = 0; i < 500; i++) {
+    for (let j = 0; j < 16; j++) {
+        for (let i = 0; i < 1200; i++) {
             $("#furArea").append(
                 `<div class="aFur${i}" style="transform:translateX(${
-                    0.1 * i
-                }vh) translateY(${10 * j}vh)"></div>`
+                    0.04 * i
+                }vh) translateY(${3 * j}vh)"></div>`
             );
         }
     }
