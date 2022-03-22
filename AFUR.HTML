@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="./jquery-3.6.0.min.js"></script>
+        <style>
+            body {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            #fur {
+                background-color: rgb(0, 65, 122);
+                width: 1vh;
+                height: 10vh;
+                transform-origin: top;
+                transition-duration: 0.2s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fur"></div>
+        <script>
+            let enterX = 0;
+            let enterY = 0;
+            let moveX = 0;
+            let moveY = 0;
+            $("#fur").mouseenter((e) => {
+                enterX = e.pageX;
+                enterY = e.pageY;
+            });
+            $("#fur").mousemove((e) => {
+                moveX = e.pageX;
+                moveY = e.pageY;
+
+                let rad = Math.atan2(moveY - enterY, moveX - enterX);
+                let angle = (rad * 180) / Math.PI;
+                console.log(angle);
+
+                $("#fur").css("transform", `rotate(${angle / 3}deg)`);
+            });
+        </script>
+    </body>
+</html>
