@@ -22,3 +22,14 @@ article {
 #furArea div:hover {
     background-color: rgb(1, 117, 218);
 }
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6363637e;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
