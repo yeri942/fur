@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 article {
     display: flex;
@@ -16,7 +17,7 @@ article {
 #furArea div {
     position: absolute;
     background-color: rgb(0, 65, 122);
-    width: 0.1vh;
+    width: 0.5vh;
     height: 4vh;
 }
 #furArea div:hover {
