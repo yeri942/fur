@@ -27,8 +27,8 @@ article {
     position: absolute;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 10vh;
+    height: 10vh;
     border-radius: 50%;
     background-color: #6363637e;
     transform: translate(-50%, -50%);
