@@ -15,7 +15,15 @@ $(document).ready(() => {
         const mouseX = e.clientX;
         const mouseY = e.clientY;
         circle.css("left", mouseX + "px").css("top", mouseY + "px");
-        if (Math.round(aFur.getBoundingClientRect().top) == mouseY) {
+        if (
+            Math.round(aFur[0].getBoundingClientRect().top) - 50 < mouseY &&
+            mouseY < Math.round(aFur[0].getBoundingClientRect().top) + 50
+        ) {
+            console.log("mouseY ", mouseY);
+            console.log(
+                "aFur[0].getBoundingClientRect().top ",
+                aFur[0].getBoundingClientRect().top
+            );
             console.log("헐!");
         }
     });
