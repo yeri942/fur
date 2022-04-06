@@ -19,7 +19,7 @@
                 width: 1vh;
                 height: 10vh;
                 transform-origin: top;
-                transition-duration: 0.2s;
+                transition-duration: 0.4s;
             }
         </style>
     </head>
@@ -42,7 +42,7 @@
                 let angle = (rad * 180) / Math.PI;
                 console.log(angle);
 
-                $("#fur").css("transform", `rotate(${angle / 3}deg)`);
+                $("#fur").css("transform", `rotate(${angle - 80}deg)`);
             });
         </script>
     </body>
