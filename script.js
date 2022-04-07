@@ -19,12 +19,7 @@ $(document).ready(() => {
             Math.round(aFur[0].getBoundingClientRect().top) - 50 < mouseY &&
             mouseY < Math.round(aFur[0].getBoundingClientRect().top) + 50
         ) {
-            console.log("mouseY ", mouseY);
-            console.log(
-                "aFur[0].getBoundingClientRect().top ",
-                aFur[0].getBoundingClientRect().top
-            );
-            console.log("헐!");
+            aFur.css("background-color", "red");
         }
     });
 });
